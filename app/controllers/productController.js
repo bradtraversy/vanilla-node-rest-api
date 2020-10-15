@@ -1,6 +1,6 @@
 const Product = require('../models/productModel')
 
-const { getPostData } = require('../utils')
+const { getPostData } = require('../../utils')
 
 // @desc    Gets All Products
 // @route   GET /api/products
