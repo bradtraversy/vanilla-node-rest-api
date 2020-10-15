@@ -1,7 +1,7 @@
 let products = require('../data/products')
 const { v4: uuidv4 } = require('uuid')
 
-const { writeDataToFile } = require('../utils')
+const { writeDataToFile } = require('../../utils')
 
 function findAll() {
     return new Promise((resolve, reject) => {
