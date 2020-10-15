@@ -2,6 +2,8 @@
 
 > Full CRUD REST API using Node.js with no framework
 
+This is for learning/experimental purposes. In most cases, you would use something like Express in a production project
+
 ```
 # Routes
 GET      /api/products
