@@ -39,10 +39,10 @@ async function createProduct(req, res) {
     try {
         const body = await getPostData(req)
 
-        const { title, description, price } = JSON.parse(body)
+        const { name, description, price } = JSON.parse(body)
 
         const product = {
-            title,
+            name,
             description,
             price
         }
@@ -69,10 +69,10 @@ async function updateProduct(req, res, id) {
         } else {
             const body = await getPostData(req)
 
-            const { title, description, price } = JSON.parse(body)
+            const { name, description, price } = JSON.parse(body)
 
             const productData = {
-                title: title || product.title,
+                name: name || product.name,
                 description: description || product.description,
                 price: price || product.price
             }
