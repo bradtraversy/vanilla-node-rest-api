@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
+    "test": "mocha --timeout 10000",
     "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.2.0",
     "nodemon": "^2.0.5"
   },
   "dependencies": {
