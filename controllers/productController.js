@@ -17,9 +17,10 @@ async function getProducts(req, res) {
 
 // @desc    Gets Single Product
 // @route   GET /api/product/:id
-async function getProduct(req, res, id) {
+async function getProduct(req, res, name) {
     try {
-        const product = await Product.findById(id)
+        const product = await Product.findByName(name)
+        
 
         if(!product) {
             res.writeHead(404, { 'Content-Type': 'application/json' })
@@ -59,9 +60,9 @@ async function createProduct(req, res) {
 
 // @desc    Update a Product
 // @route   PUT /api/products/:id
-async function updateProduct(req, res, id) {
+async function updateProduct(req, res, name) {
     try {
-        const product = await Product.findById(id)
+        const product = await Product.findByName(name)
 
         if(!product) {
             res.writeHead(404, { 'Content-Type': 'application/json' })
