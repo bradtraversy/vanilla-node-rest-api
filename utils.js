@@ -21,7 +21,7 @@ function getPostData(req) {
                 resolve(body)
             })
         } catch (error) {
-            reject(err)
+            reject(error)
         }
     })
 }
